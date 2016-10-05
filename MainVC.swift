@@ -1,0 +1,83 @@
+//
+//  MainVC.swift
+//  TocaMama
+//
+//  Created by Michael Dunn on 2016-10-04.
+//  Copyright © 2016 Michael Dunn. All rights reserved.
+//
+
+import UIKit
+
+class MainVC: UIViewController, TacoDataServiceDelegate{
+
+    @IBOutlet weak var headerView: HeaderView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    var dataService: TacoDataService = TacoDataService.instance
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Load taco
+        dataService = TacoDataService.instance
+        dataService.delegate = self
+        dataService.loadTaco()
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        headerView.addDropShadow()
+        
+        /*  Old way of loading data
+        let nib = UINib(nibName: "TacoCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+        */
+        
+        collectionView.register(TacoCell.self)
+    }
+    
+    func tacoDataLoaded() {
+        print("Taco Loaded")
+    }
+
+}
+
+
+
+extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
+            cell.configureCell(taco: dataService.tacos[indexPath.row])
+            return cell
+        } else {
+            return UICollectionViewCell()
+        }
+ 
+        //let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        //cell.configureCell(taco: dataService.tacos[indexPath.row])
+        //return cell
+        
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataService.tacos.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+    }
+    
+    // Flow Layout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 95, height: 95)
+    }
+    
+}

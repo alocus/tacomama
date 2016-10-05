@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D53821371DA426BA008E4AEA /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53821351DA426BA008E4AEA /* TacoCell.swift */; };
+		D53821381DA426BA008E4AEA /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53821361DA426BA008E4AEA /* TacoCell.xib */; };
+		D538213A1DA42C30008E4AEA /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53821391DA42C30008E4AEA /* ReusableView.swift */; };
+		D538213C1DA42D7D008E4AEA /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538213B1DA42D7D008E4AEA /* NibLoadableView.swift */; };
+		D538213E1DA42DFE008E4AEA /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538213D1DA42DFE008E4AEA /* UICollectionView+Ext.swift */; };
+		D578D2991DA41FFC000F4CDA /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578D2981DA41FFC000F4CDA /* csv.swift */; };
+		D5C956041DA40A8F00D31C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C956031DA40A8F00D31C84 /* AppDelegate.swift */; };
+		D5C956091DA40A8F00D31C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C956071DA40A8F00D31C84 /* Main.storyboard */; };
+		D5C9560B1DA40A8F00D31C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C9560A1DA40A8F00D31C84 /* Assets.xcassets */; };
+		D5C9560E1DA40A8F00D31C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C9560C1DA40A8F00D31C84 /* LaunchScreen.storyboard */; };
+		D5C956191DA40A8F00D31C84 /* TocaMamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C956181DA40A8F00D31C84 /* TocaMamaTests.swift */; };
+		D5C9562A1DA40B3F00D31C84 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C956291DA40B3F00D31C84 /* MainVC.swift */; };
+		D5C9562C1DA40C7600D31C84 /* TacoMamaData.csv in Resources */ = {isa = PBXBuildFile; fileRef = D5C9562B1DA40C7600D31C84 /* TacoMamaData.csv */; };
+		D5C9562E1DA40DA700D31C84 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C9562D1DA40DA700D31C84 /* DropShadow.swift */; };
+		D5C956301DA40E6700D31C84 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C9562F1DA40E6700D31C84 /* HeaderView.swift */; };
+		D5C956321DA4108D00D31C84 /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C956311DA4108D00D31C84 /* Taco.swift */; };
+		D5C956351DA414DF00D31C84 /* TacoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C956341DA414DF00D31C84 /* TacoDataService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5C956151DA40A8F00D31C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5C955F81DA40A8F00D31C84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5C955FF1DA40A8F00D31C84;
+			remoteInfo = TocaMama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D53821351DA426BA008E4AEA /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
+		D53821361DA426BA008E4AEA /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
+		D53821391DA42C30008E4AEA /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		D538213B1DA42D7D008E4AEA /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		D538213D1DA42DFE008E4AEA /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		D578D2981DA41FFC000F4CDA /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		D5C956001DA40A8F00D31C84 /* TocaMama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TocaMama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C956031DA40A8F00D31C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TocaMama/AppDelegate.swift; sourceTree = "<group>"; };
+		D5C956081DA40A8F00D31C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5C9560A1DA40A8F00D31C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TocaMama/Assets.xcassets; sourceTree = "<group>"; };
+		D5C9560D1DA40A8F00D31C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5C9560F1DA40A8F00D31C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TocaMama/Info.plist; sourceTree = "<group>"; };
+		D5C956141DA40A8F00D31C84 /* TocaMamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TocaMamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C956181DA40A8F00D31C84 /* TocaMamaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TocaMamaTests.swift; sourceTree = "<group>"; };
+		D5C9561A1DA40A8F00D31C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C956291DA40B3F00D31C84 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		D5C9562B1DA40C7600D31C84 /* TacoMamaData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TacoMamaData.csv; sourceTree = "<group>"; };
+		D5C9562D1DA40DA700D31C84 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		D5C9562F1DA40E6700D31C84 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D5C956311DA4108D00D31C84 /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
+		D5C956341DA414DF00D31C84 /* TacoDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoDataService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5C955FD1DA40A8F00D31C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C956111DA40A8F00D31C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D578D2971DA41FEB000F4CDA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D578D2981DA41FFC000F4CDA /* csv.swift */,
+			);
+			name = Utils;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D5C955F71DA40A8F00D31C84 = {
+			isa = PBXGroup;
+			children = (
+				D5C956021DA40A8F00D31C84 /* TocaMama */,
+				D5C956171DA40A8F00D31C84 /* TocaMamaTests */,
+				D5C956011DA40A8F00D31C84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5C956011DA40A8F00D31C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5C956001DA40A8F00D31C84 /* TocaMama.app */,
+				D5C956141DA40A8F00D31C84 /* TocaMamaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5C956021DA40A8F00D31C84 /* TocaMama */ = {
+			isa = PBXGroup;
+			children = (
+				D578D2971DA41FEB000F4CDA /* Utils */,
+				D5C956331DA414CE00D31C84 /* Services */,
+				D5C956281DA40AC300D31C84 /* Extensions */,
+				D5C956271DA40AB600D31C84 /* Protocols */,
+				D5C956251DA40AA600D31C84 /* Model */,
+				D5C956241DA40A9C00D31C84 /* View */,
+				D5C956231DA40A9600D31C84 /* Controller */,
+				D5C956261DA40AAD00D31C84 /* Resources */,
+			);
+			path = TocaMama;
+			sourceTree = "<group>";
+		};
+		D5C956171DA40A8F00D31C84 /* TocaMamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5C956181DA40A8F00D31C84 /* TocaMamaTests.swift */,
+				D5C9561A1DA40A8F00D31C84 /* Info.plist */,
+			);
+			path = TocaMamaTests;
+			sourceTree = "<group>";
+		};
+		D5C956231DA40A9600D31C84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5C956031DA40A8F00D31C84 /* AppDelegate.swift */,
+				D5C956291DA40B3F00D31C84 /* MainVC.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D5C956241DA40A9C00D31C84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5C9560C1DA40A8F00D31C84 /* LaunchScreen.storyboard */,
+				D5C956071DA40A8F00D31C84 /* Main.storyboard */,
+				D5C9562F1DA40E6700D31C84 /* HeaderView.swift */,
+				D53821351DA426BA008E4AEA /* TacoCell.swift */,
+				D53821361DA426BA008E4AEA /* TacoCell.xib */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D5C956251DA40AA600D31C84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5C956311DA4108D00D31C84 /* Taco.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D5C956261DA40AAD00D31C84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5C9562B1DA40C7600D31C84 /* TacoMamaData.csv */,
+				D5C9560A1DA40A8F00D31C84 /* Assets.xcassets */,
+				D5C9560F1DA40A8F00D31C84 /* Info.plist */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D5C956271DA40AB600D31C84 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D53821391DA42C30008E4AEA /* ReusableView.swift */,
+				D5C9562D1DA40DA700D31C84 /* DropShadow.swift */,
+				D538213B1DA42D7D008E4AEA /* NibLoadableView.swift */,
+			);
+			name = Protocols;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D5C956281DA40AC300D31C84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D538213D1DA42DFE008E4AEA /* UICollectionView+Ext.swift */,
+			);
+			name = Extensions;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D5C956331DA414CE00D31C84 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D5C956341DA414DF00D31C84 /* TacoDataService.swift */,
+			);
+			name = Services;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5C955FF1DA40A8F00D31C84 /* TocaMama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C9561D1DA40A8F00D31C84 /* Build configuration list for PBXNativeTarget "TocaMama" */;
+			buildPhases = (
+				D5C955FC1DA40A8F00D31C84 /* Sources */,
+				D5C955FD1DA40A8F00D31C84 /* Frameworks */,
+				D5C955FE1DA40A8F00D31C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TocaMama;
+			productName = TocaMama;
+			productReference = D5C956001DA40A8F00D31C84 /* TocaMama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5C956131DA40A8F00D31C84 /* TocaMamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C956201DA40A8F00D31C84 /* Build configuration list for PBXNativeTarget "TocaMamaTests" */;
+			buildPhases = (
+				D5C956101DA40A8F00D31C84 /* Sources */,
+				D5C956111DA40A8F00D31C84 /* Frameworks */,
+				D5C956121DA40A8F00D31C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5C956161DA40A8F00D31C84 /* PBXTargetDependency */,
+			);
+			name = TocaMamaTests;
+			productName = TocaMamaTests;
+			productReference = D5C956141DA40A8F00D31C84 /* TocaMamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5C955F81DA40A8F00D31C84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Michael Dunn";
+				TargetAttributes = {
+					D5C955FF1DA40A8F00D31C84 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					D5C956131DA40A8F00D31C84 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5C955FF1DA40A8F00D31C84;
+					};
+				};
+			};
+			buildConfigurationList = D5C955FB1DA40A8F00D31C84 /* Build configuration list for PBXProject "TocaMama" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5C955F71DA40A8F00D31C84;
+			productRefGroup = D5C956011DA40A8F00D31C84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5C955FF1DA40A8F00D31C84 /* TocaMama */,
+				D5C956131DA40A8F00D31C84 /* TocaMamaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5C955FE1DA40A8F00D31C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C9560E1DA40A8F00D31C84 /* LaunchScreen.storyboard in Resources */,
+				D5C9562C1DA40C7600D31C84 /* TacoMamaData.csv in Resources */,
+				D5C9560B1DA40A8F00D31C84 /* Assets.xcassets in Resources */,
+				D5C956091DA40A8F00D31C84 /* Main.storyboard in Resources */,
+				D53821381DA426BA008E4AEA /* TacoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C956121DA40A8F00D31C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5C955FC1DA40A8F00D31C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D538213A1DA42C30008E4AEA /* ReusableView.swift in Sources */,
+				D53821371DA426BA008E4AEA /* TacoCell.swift in Sources */,
+				D5C956351DA414DF00D31C84 /* TacoDataService.swift in Sources */,
+				D578D2991DA41FFC000F4CDA /* csv.swift in Sources */,
+				D5C956041DA40A8F00D31C84 /* AppDelegate.swift in Sources */,
+				D538213E1DA42DFE008E4AEA /* UICollectionView+Ext.swift in Sources */,
+				D5C9562E1DA40DA700D31C84 /* DropShadow.swift in Sources */,
+				D538213C1DA42D7D008E4AEA /* NibLoadableView.swift in Sources */,
+				D5C9562A1DA40B3F00D31C84 /* MainVC.swift in Sources */,
+				D5C956321DA4108D00D31C84 /* Taco.swift in Sources */,
+				D5C956301DA40E6700D31C84 /* HeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C956101DA40A8F00D31C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C956191DA40A8F00D31C84 /* TocaMamaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5C956161DA40A8F00D31C84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5C955FF1DA40A8F00D31C84 /* TocaMama */;
+			targetProxy = D5C956151DA40A8F00D31C84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5C956071DA40A8F00D31C84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5C956081DA40A8F00D31C84 /* Base */,
+			);
+			name = Main.storyboard;
+			path = TocaMama;
+			sourceTree = "<group>";
+		};
+		D5C9560C1DA40A8F00D31C84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5C9560D1DA40A8F00D31C84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = TocaMama;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5C9561B1DA40A8F00D31C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5C9561C1DA40A8F00D31C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5C9561E1DA40A8F00D31C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TocaMama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alocus.TocaMama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D5C9561F1DA40A8F00D31C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TocaMama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alocus.TocaMama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D5C956211DA40A8F00D31C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TocaMamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alocus.TocaMamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TocaMama.app/TocaMama";
+			};
+			name = Debug;
+		};
+		D5C956221DA40A8F00D31C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TocaMamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alocus.TocaMamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TocaMama.app/TocaMama";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5C955FB1DA40A8F00D31C84 /* Build configuration list for PBXProject "TocaMama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C9561B1DA40A8F00D31C84 /* Debug */,
+				D5C9561C1DA40A8F00D31C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C9561D1DA40A8F00D31C84 /* Build configuration list for PBXNativeTarget "TocaMama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C9561E1DA40A8F00D31C84 /* Debug */,
+				D5C9561F1DA40A8F00D31C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C956201DA40A8F00D31C84 /* Build configuration list for PBXNativeTarget "TocaMamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C956211DA40A8F00D31C84 /* Debug */,
+				D5C956221DA40A8F00D31C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5C955F81DA40A8F00D31C84 /* Project object */;
+}
