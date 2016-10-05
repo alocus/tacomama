@@ -23,6 +23,7 @@ class MainVC: UIViewController, TacoDataServiceDelegate{
         dataService = TacoDataService.instance
         dataService.delegate = self
         dataService.loadTaco()
+        dataService.tacos.shuffle()
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -39,6 +40,7 @@ class MainVC: UIViewController, TacoDataServiceDelegate{
     
     func tacoDataLoaded() {
         print("Taco Loaded")
+        collectionView.reloadData()
     }
 
 }
@@ -56,9 +58,9 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             return UICollectionViewCell()
         }
  
-        //let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
-        //cell.configureCell(taco: dataService.tacos[indexPath.row])
-        //return cell
+//        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+//        cell.configureCell(taco: dataService.tacos[indexPath.row])
+//        return cell
         
     }
     
@@ -71,8 +73,9 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
+        if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell {
+            cell.shake()
+        }
     }
     
     // Flow Layout

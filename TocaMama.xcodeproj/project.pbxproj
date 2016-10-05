@@ -12,7 +12,9 @@
 		D538213A1DA42C30008E4AEA /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53821391DA42C30008E4AEA /* ReusableView.swift */; };
 		D538213C1DA42D7D008E4AEA /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538213B1DA42D7D008E4AEA /* NibLoadableView.swift */; };
 		D538213E1DA42DFE008E4AEA /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538213D1DA42DFE008E4AEA /* UICollectionView+Ext.swift */; };
+		D53821401DA4BDD0008E4AEA /* MutableCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538213F1DA4BDD0008E4AEA /* MutableCollection+Ext.swift */; };
 		D578D2991DA41FFC000F4CDA /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578D2981DA41FFC000F4CDA /* csv.swift */; };
+		D57D47261DA4C0290083C868 /* Shakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D47251DA4C0290083C868 /* Shakable.swift */; };
 		D5C956041DA40A8F00D31C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C956031DA40A8F00D31C84 /* AppDelegate.swift */; };
 		D5C956091DA40A8F00D31C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C956071DA40A8F00D31C84 /* Main.storyboard */; };
 		D5C9560B1DA40A8F00D31C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C9560A1DA40A8F00D31C84 /* Assets.xcassets */; };
@@ -42,7 +44,9 @@
 		D53821391DA42C30008E4AEA /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		D538213B1DA42D7D008E4AEA /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		D538213D1DA42DFE008E4AEA /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		D538213F1DA4BDD0008E4AEA /* MutableCollection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Ext.swift"; sourceTree = "<group>"; };
 		D578D2981DA41FFC000F4CDA /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		D57D47251DA4C0290083C868 /* Shakable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakable.swift; sourceTree = "<group>"; };
 		D5C956001DA40A8F00D31C84 /* TocaMama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TocaMama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C956031DA40A8F00D31C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TocaMama/AppDelegate.swift; sourceTree = "<group>"; };
 		D5C956081DA40A8F00D31C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				D53821391DA42C30008E4AEA /* ReusableView.swift */,
 				D5C9562D1DA40DA700D31C84 /* DropShadow.swift */,
 				D538213B1DA42D7D008E4AEA /* NibLoadableView.swift */,
+				D57D47251DA4C0290083C868 /* Shakable.swift */,
 			);
 			name = Protocols;
 			path = ..;
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				D538213D1DA42DFE008E4AEA /* UICollectionView+Ext.swift */,
+				D538213F1DA4BDD0008E4AEA /* MutableCollection+Ext.swift */,
 			);
 			name = Extensions;
 			path = ..;
@@ -306,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53821401DA4BDD0008E4AEA /* MutableCollection+Ext.swift in Sources */,
 				D538213A1DA42C30008E4AEA /* ReusableView.swift in Sources */,
 				D53821371DA426BA008E4AEA /* TacoCell.swift in Sources */,
 				D5C956351DA414DF00D31C84 /* TacoDataService.swift in Sources */,
@@ -313,6 +320,7 @@
 				D5C956041DA40A8F00D31C84 /* AppDelegate.swift in Sources */,
 				D538213E1DA42DFE008E4AEA /* UICollectionView+Ext.swift in Sources */,
 				D5C9562E1DA40DA700D31C84 /* DropShadow.swift in Sources */,
+				D57D47261DA4C0290083C868 /* Shakable.swift in Sources */,
 				D538213C1DA42D7D008E4AEA /* NibLoadableView.swift in Sources */,
 				D5C9562A1DA40B3F00D31C84 /* MainVC.swift in Sources */,
 				D5C956321DA4108D00D31C84 /* Taco.swift in Sources */,
