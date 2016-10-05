@@ -50,17 +50,19 @@ class MainVC: UIViewController, TacoDataServiceDelegate{
 extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
-            cell.configureCell(taco: dataService.tacos[indexPath.row])
-            return cell
-        } else {
-            return UICollectionViewCell()
-        }
- 
-//        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
-//        cell.configureCell(taco: dataService.tacos[indexPath.row])
-//        return cell
+
+        // Old way to dequeue
+//        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
+//            cell.configureCell(taco: dataService.tacos[indexPath.row])
+//            return cell
+//        } else {
+//            return UICollectionViewCell()
+//        }
+// 
+        // Protocol way to dequeue.  see UICollectionView+Ext
+        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        cell.configureCell(taco: dataService.tacos[indexPath.row])
+        return cell
         
     }
     
