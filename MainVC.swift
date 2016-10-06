@@ -82,7 +82,7 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     // Flow Layout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 95, height: 95)
+        return CGSize(width: 80, height: 80)
     }
     
 }

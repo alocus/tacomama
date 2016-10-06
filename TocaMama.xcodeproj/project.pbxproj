@@ -257,6 +257,7 @@
 				TargetAttributes = {
 					D5C955FF1DA40A8F00D31C84 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A2A2L24839;
 						ProvisioningStyle = Automatic;
 					};
 					D5C956131DA40A8F00D31C84 = {
@@ -463,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A2A2L24839;
 				INFOPLIST_FILE = TocaMama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alocus.TocaMama;
@@ -475,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A2A2L24839;
 				INFOPLIST_FILE = TocaMama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alocus.TocaMama;
